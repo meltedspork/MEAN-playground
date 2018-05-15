@@ -1,4 +1,5 @@
 const ora = require('ora')
+
 const getWeather = require('../utils/weather')
 const getLocation = require('../utils/location')
 
