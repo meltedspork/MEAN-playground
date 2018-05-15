@@ -1,0 +1,16 @@
+{
+  "name": "outside-cli",
+  "description": "https://timber.io/blog/creating-a-real-world-cli-app-with-node/",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": {
+    "outside": "bin/outside"
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "minimist": "^1.2.0",
+    "ora": "^2.1.0"
+  }
+}
