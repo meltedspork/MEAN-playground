@@ -3,7 +3,12 @@
   "description": "https://timber.io/blog/creating-a-real-world-cli-app-with-node/",
   "version": "1.0.0",
   "license": "MIT",
+  "bin": {
+    "outside": "bin/outside"
+  },
   "scripts": {},
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
 }
