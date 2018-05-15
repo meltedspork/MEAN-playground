@@ -1,1 +1,1 @@
-# MEAN-playground
+# node-MEAN-playground
