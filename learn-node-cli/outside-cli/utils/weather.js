@@ -1,6 +1,8 @@
 const axios = require('axios')
 
 module.exports = async (location) => {
+  // NOTE: slows down to see ora spinner effect in working!
+  // await new Promise(resolve => setTimeout(resolve, 5000))
   const results = await axios({
     method: 'get',
     url: 'https://query.yahooapis.com/v1/public/yql',
