@@ -17,7 +17,7 @@ exports.create = (req, res) => {
 
   // Save Note in the database
   note.save().then(data => {
-    res.sent(data);
+    res.send(data);
   }).catch(err => {
     res.status(500).send({
       message: err.message || 'Some error occurred while creating the Note.'
@@ -45,7 +45,7 @@ exports.findOne = (req, res) => {
       });
     }
     res.send(note);
-  }).catrch(err => {
+  }).catch(err => {
     if (err.kind === 'ObjectId') {
       return res.status(404).send({
         message: `Note not found with id ${req.params.noteId}`
